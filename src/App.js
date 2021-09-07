@@ -5,6 +5,7 @@ import SlideShow from './components/SlideShow';
 import TopNews from './components/TopNews';
 import Category from './components/Category';
 import News from './components/News';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <SlideShow />
         <TopNews />
         <News />
+        <Footer />
       </Router>
     </>
   );
