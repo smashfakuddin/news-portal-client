@@ -6,19 +6,28 @@ import TopNews from './components/TopNews';
 import Category from './components/Category';
 import News from './components/News';
 import Footer from './components/Footer';
+import Login from './components/Login';
 
 function App() {
   return (
-    <>
-      <Router>
-        <Nav />
-        <Category />
-        <SlideShow />
-        <TopNews />
-        <News />
+
+    <Router>
+      <Nav />
+      <Switch>
+        <Route path='/home'>
+          <Category />
+          <SlideShow />
+          <TopNews />
+          <News />
+        </Route>
+        <Route path='/login'>
+          <Login />
+    
+        </Route>
+      </Switch>
         <Footer />
-      </Router>
-    </>
+    </Router>
+
   );
 }
 
